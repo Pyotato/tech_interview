@@ -1,4 +1,4 @@
-# Tech_interview
+# Tech_interview : Frameworks/libraries
 
 기술면접 준비 모음집 (FE 위주)
 
@@ -28,7 +28,7 @@
 > 5. [Performance](https://github.com/Pyotato/tech_interview/tree/Performance)
 > 6. [CS](https://github.com/Pyotato/tech_interview/tree/CS)
 > 7. [Network](https://github.com/Pyotato/tech_interview/tree/Network)
-> 8. [Frameworks/libraries](https://github.com/Pyotato/tech_interview/tree/Frameworks_libraries)
+> 8. **Frameworks/libraries**
 > 9. [CodeStyle](https://github.com/Pyotato/tech_interview/tree/CodeStyle)
 > 10. [Security](https://github.com/Pyotato/tech_interview/tree/Security)
 > 11. [ETC](https://github.com/Pyotato/tech_interview/tree/ETC)
