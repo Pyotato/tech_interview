@@ -1,4 +1,4 @@
-# Tech_interview
+# Tech_interview : JS
 
 기술면접 준비 모음집 (FE 위주)
 
@@ -23,7 +23,7 @@
 
 > 1. [HTML]()
 > 2. [CSS]()
-> 3. ### JS
+> 3. **JS**
 > 4. [Testing]()
 > 5. [Performance]()
 > 6. [CS]()
