@@ -34,5 +34,8 @@
 > 10. [Security](https://github.com/Pyotato/tech_interview/tree/Security)
 > 11. [ETC](https://github.com/Pyotato/tech_interview/tree/ETC)
 
+## HTML
+1. [DOCTYPE](https://github.com/Pyotato/tech_interview/blob/HTML/DOCTYPE.md)
+
 # 😅Issues & Prs
 > 🌟내용에 오류 및 추가/수정할 부분이 있다면 PR 부탁드립니다.
