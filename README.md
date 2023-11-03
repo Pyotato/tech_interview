@@ -1,4 +1,4 @@
-# Tech_interview
+# Tech_interview : Network
 
 기술면접 준비 모음집 (FE 위주)
 
@@ -27,7 +27,7 @@
 > 4. [Testing](https://github.com/Pyotato/tech_interview/tree/Testing)
 > 5. [Performance](https://github.com/Pyotato/tech_interview/tree/Performance)
 > 6. [CS](https://github.com/Pyotato/tech_interview/tree/CS)
-> 7. [Network](https://github.com/Pyotato/tech_interview/tree/Network)
+> 7. **Network**
 > 8. [Frameworks/libraries](https://github.com/Pyotato/tech_interview/tree/Frameworks_libraries)
 > 9. [CodeStyle](https://github.com/Pyotato/tech_interview/tree/CodeStyle)
 > 10. [Security](https://github.com/Pyotato/tech_interview/tree/Security)
