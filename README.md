@@ -22,7 +22,7 @@
 # Categories
 
 > 1. [HTML](https://github.com/Pyotato/tech_interview/tree/HTML)
-> 2. [CSS](https://github.com/Pyotato/tech_interview/tree/CSS)
+> 2. **CSS**
 > 3. [JS](https://github.com/Pyotato/tech_interview/tree/JS)
 > 4. [Testing](https://github.com/Pyotato/tech_interview/tree/Testing)
 > 5. [Performance](https://github.com/Pyotato/tech_interview/tree/Performance)
