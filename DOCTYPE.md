@@ -3,6 +3,7 @@
 ## WHAT?
 
 > DOCTYPE은 **Doc**ument **Type**의 약자로 HTML의 어떤 버전으로 작성되었는 지를 미리 선언해서 웹브라우저가 내용을 올바르게 표시하도록 해주는 것
+
 ![Chrome's element of 'https://github.com/Pyotato/tech_interview/edit/HTML/DOCTYPE.md'](https://github.com/Pyotato/tech_interview/assets/102423086/88bee1cc-5eb6-4b5d-a323-48f0c537f6f7)
 
 > 위와 같이 개발자도구를 열어보면 `<!DOCTYPE html>` 으로 선언을 해주는 걸 볼 수 있다. 철자 대소문자는 무관함.
