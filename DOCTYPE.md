@@ -20,7 +20,17 @@
     * quirks mode : Navigator4와 Internet Explorer 5에서 주로 동작. 웹표준 도입이 시작되기 전에 만들어진 웹사이트들을 지원하기 위해 필요함
     * limited-quirks mode : 호환성을 위한 몇 가지 기능들이 있음
     * **no-quirks mode**:  현대 HTML와 CSS 표준에 맞게 동작
-
+### HOW?
+* HTML4.01 선언 방법 3가지
+  |선언 방식|HTML 요소 & 속성 포함|정식 X 요소 포함|프레임셋(frameset) 허용|
+  |-------------------|--|---|---|
+  |`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">`|O|X|X|
+  |`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">`|O|O|X|
+  |`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">`|O|O|O|
+* HTML5에서 DOCTYPE 선언 방법
+  ```
+  <!DOCTYPE html>
+  ```
 ## Related Topics
 * [XHTML]()
 
@@ -28,3 +38,4 @@
 * [크로스브라우징 문제들](https://www.browserstack.com/guide/common-cross-browser-compatibility-issues)
 * [Quirks mode & standard mode mozilla docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode)
 * [HTML <!DOCTYPE> Declaration](https://www.w3schools.com/tags/tag_doctype.ASP)
+
