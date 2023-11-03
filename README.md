@@ -2,23 +2,6 @@
 
 기술면접 준비 모음집 (FE 위주)
 
-# Commit convention
-
-| content | description                 |
-| ------- | --------------------------- |
-| add     | 질문 링크 추가              |
-| answer  | 질문에 대답 추가            |
-| typo    | 오타 및 링크 오류 수정      |
-| fix     | 오류 내용 수정              |
-| init    | 질문 카테고리 브랜치 초기화 |
-
-```
-# init/fix
-[category] content
-
-[category] content : interview question
-```
-
 # Categories
 
 > 1. **HTML**
@@ -32,3 +15,7 @@
 > 9. [CodeStyle](https://github.com/Pyotato/tech_interview/tree/CodeStyle)
 > 10. [Security](https://github.com/Pyotato/tech_interview/tree/Security)
 > 11. [ETC](https://github.com/Pyotato/tech_interview/tree/ETC)
+
+# Questions
+
+1. [DOCTYPE](https://github.com/Pyotato/tech_interview/blob/HTML/DOCTYPE.md)
