@@ -7,11 +7,14 @@
 | content | description                 |
 | :-------: | :---------------------------: |
 | add     | 질문 링크 추가              |
+| link    | 질문 이외의 링크 추가 (reference 링크 etc)|
 | answer  | 질문에 대답 추가            |
 | typo    | 오타 및 링크 오류 수정      |
 | fix     | 오류 내용 수정              |
 | init    | 질문 카테고리 브랜치 초기화 |
 | style   | 탬플릿, 스타일 등 내용 이외의 사항 변경 |
+| rule   | 커밋룰 변경 및 추가 |
+
 
 ```
 # init/fix
@@ -84,3 +87,4 @@
 # References
 > 면접 질문들을 모은 곳 및 참고한 곳들입니다.
 > * [junh0328/prepare_frontend_interview](https://github.com/junh0328/prepare_frontend_interview)
+
