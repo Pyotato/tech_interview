@@ -22,20 +22,65 @@
 
 # ✍️Categories
 
-> 1. [HTML](https://github.com/Pyotato/tech_interview/tree/HTML)
-> 2. [CSS](https://github.com/Pyotato/tech_interview/tree/CSS)
-> 3. [JS](https://github.com/Pyotato/tech_interview/tree/JS)
-> 4. [Testing](https://github.com/Pyotato/tech_interview/tree/Testing)
-> 5. [Performance](https://github.com/Pyotato/tech_interview/tree/Performance)
-> 6. [CS](https://github.com/Pyotato/tech_interview/tree/CS)
-> 7. [Network](https://github.com/Pyotato/tech_interview/tree/Network)
-> 8. [Frameworks/libraries](https://github.com/Pyotato/tech_interview/tree/Frameworks/libraries) 
-> 9. [CodeStyle](https://github.com/Pyotato/tech_interview/tree/CodeStyle)
-> 10. [Security](https://github.com/Pyotato/tech_interview/tree/Security)
-> 11. [ETC](https://github.com/Pyotato/tech_interview/tree/ETC)
+> 1. [HTML](https://github.com/Pyotato/tech_interview/tree/HTML) [👉문제 리스트 & 출제 빈도 보기](https://github.com/Pyotato/tech_interview#HTML)
+> 2. [CSS](https://github.com/Pyotato/tech_interview/tree/CSS)[👉문제 리스트 & 출제 빈도 보기](https://github.com/Pyotato/tech_interview#CSS)
+> 3. [JS](https://github.com/Pyotato/tech_interview/tree/JS)[👉문제 리스트 & 출제 빈도 보기](https://github.com/Pyotato/tech_interview#JS)
+> 4. [Testing](https://github.com/Pyotato/tech_interview/tree/Testing)[👉문제 리스트 & 출제 빈도 보기](https://github.com/Pyotato/tech_interview#Testing)
+> 5. [Performance](https://github.com/Pyotato/tech_interview/tree/Performance)[👉문제 리스트 & 출제 빈도 보기](https://github.com/Pyotato/tech_interview#Performance)
+> 6. [CS](https://github.com/Pyotato/tech_interview/tree/CS)[👉문제 리스트 & 출제 빈도 보기](https://github.com/Pyotato/tech_interview#HTML)
+> 7. [Network](https://github.com/Pyotato/tech_interview/tree/Network)[👉문제 리스트 & 출제 빈도 보기](https://github.com/Pyotato/tech_interview#Network)
+> 8. [Frameworks/libraries](https://github.com/Pyotato/tech_interview/tree/Frameworks/libraries) [👉문제 리스트 & 출제 빈도 보기](https://github.com/Pyotato/tech_interview#Frameworks/libraries)
+> 9. [CodeStyle](https://github.com/Pyotato/tech_interview/tree/CodeStyle)[👉문제 리스트 & 출제 빈도 보기](https://github.com/Pyotato/tech_interview#CodeStyle)
+> 10. [Security](https://github.com/Pyotato/tech_interview/tree/Security)[👉문제 리스트 & 출제 빈도 보기](https://github.com/Pyotato/tech_interview#Security)
+> 11. [ETC](https://github.com/Pyotato/tech_interview/tree/ETC)[👉문제 리스트 & 출제 빈도 보기](https://github.com/Pyotato/tech_interview#ETC)
 
 ## HTML
-1. [DOCTYPE](https://github.com/Pyotato/tech_interview/blob/HTML/DOCTYPE.md)
+|질문|질문 빈도|질문 받음 여부|
+|[DOCTYPE](https://github.com/Pyotato/tech_interview/blob/HTML/DOCTYPE.md)|||
+
+## CSS
+|질문|질문 빈도|질문 받음 여부|
+||||
+
+## JS
+|질문|질문 빈도|질문 받음 여부|
+||||
+
+## Testing
+|질문|질문 빈도|질문 받음 여부|
+||||
+
+## Performance
+|질문|질문 빈도|질문 받음 여부|
+||||
+
+## CS
+|질문|질문 빈도|질문 받음 여부|
+||||
+
+## Network
+|질문|질문 빈도|질문 받음 여부|
+||||
+
+## Frameworks/libraries
+|질문|질문 빈도|질문 받음 여부|
+||||
+
+## CodeStyle
+|질문|질문 빈도|질문 받음 여부|
+||||
+
+## Security
+|질문|질문 빈도|질문 받음 여부|
+||||
+
+## ETC
+|질문|질문 빈도|질문 받음 여부|
+||||
 
 # 😅Issues & Prs
 > 🌟내용에 오류 및 추가/수정할 부분이 있다면 PR 부탁드립니다.
+
+# References
+> 면접 질문들을 모은 곳 및 참고한 곳들입니다.
+> * [junh0328/prepare_frontend_interview](https://github.com/junh0328/prepare_frontend_interview)
