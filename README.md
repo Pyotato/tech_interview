@@ -16,6 +16,8 @@
 | style   | 탬플릿, 스타일 등 내용 이외의 사항 변경 |
 | rule   | 커밋룰 변경 및 추가 |
 | remove   | 파일 삭제만을 한 커밋 |
+| tally   | 면접 질문 받음 여부 수정 |
+
 
 
 ```
@@ -99,7 +101,7 @@
 |[변수] 변수란 무엇인가요?|  |  |  |
 |[변수] 식별자란 무엇인가요?|  |  |  |
 |[변수] var 키워드는 뭔가요?|  |  |  |
-|[[변수] 호이스팅이 뭔가요?](https://github.com/Pyotato/tech_interview/edit/JS/variable/hoisting.md)|🔥🔥🔥🔥  |  |  |
+|[[변수] 호이스팅이 뭔가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/hoisting.md)|🔥🔥🔥🔥  |  |  |
 |[변수] let 키워드는 var 키워드와 어떤 점이 다른가요?|🔥🔥🔥 |  |  |
 |[변수] TDZ| 🔥🔥🔥 |  |  |
 |[변수] const 키워드는 어떤 특징이 있나요? | 🔥🔥 |  |  |
