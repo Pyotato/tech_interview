@@ -80,7 +80,7 @@ console.log("변수 선언과 할당 둘다", x); // 1 : 1이라는 값을 할�
 
     ````js
 
-                console.log(typeof func); //undefined
+    console.log(typeof func); //undefined
 
     var func = function () {
     // declaration is hoisted only
@@ -89,16 +89,12 @@ console.log("변수 선언과 할당 둘다", x); // 1 : 1이라는 값을 할�
     };
     console.log(typeof func); //function
 
-            ```
-
-
     ````
 
 ## Related Topics
 
-- [TDZ(Temporal Dead Zone)]()
-- [실행컨텍스트]()
-- []()
+- [[변수] TDZ (Temporal Dead Zone)]()
+
 
 ## References
 
