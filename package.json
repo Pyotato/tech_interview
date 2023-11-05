@@ -8,6 +8,8 @@
   "author": "Pyotato",
   "license": "ISC",
   "dependencies": {
+    "bignumber.js": "^9.1.2",
     "nodemon": "^3.0.1"
-  }
+  },
+  "type": "module"
 }
