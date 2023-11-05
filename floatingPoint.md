@@ -57,7 +57,7 @@ console.log(new BigNumber(x + y)); // 0.30000000000000004
 
 - `라이브러리` 사용
   - Big.js(더 작고 간단한 라이브러리가 필요할 경우), [BigNumber.js](https://github.com/MikeMcl/bignumber.js), Decimal.js(정수가 아닌 지수 지원해줌, 매우 큰 단위의 수를 다룰 때 사용하기 좋음) math.js 등이 있다.
-  - 그중 아래는 [BigNumber.js를 활용해본 예]()다.
+  - 그중 아래는 [BigNumber.js를 활용해본 예](https://github.com/Pyotato/tech_interview/blob/JS/samples/floatingPoint.js#L17C1-L17C61)다.
     ```js
     console.log(new BigNumber(x).plus(new BigNumber(y))); // 0.3
     ```
