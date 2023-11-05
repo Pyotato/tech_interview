@@ -1,0 +1,13 @@
+{
+  "name": "tech_interview",
+  "version": "1.0.0",
+  "description": "기술면접 준비 모음집 (FE 위주)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pyotato",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
