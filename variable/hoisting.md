@@ -4,7 +4,7 @@
 
 > '호이스터'란 기계는 끌어올려주는 데 쓰인다.
 
-![호이스터](image.png)
+![호이스터](/images/hoister.png)
 
 > 자바스크립트에서의 호이스팅이란 변수나 함수의 선언을 함수나 블록의 스코프 최상단로 끌어올려주는 것이다. 즉, 코드가 실행되기 전에 변수나 함수 선언이 실행되어 메모리 공간이 할당되는 현상을 가르킨다.
 
@@ -78,18 +78,16 @@ console.log("변수 선언과 할당 둘다", x); // 1 : 1이라는 값을 할�
 
   - 반면에 함수 선언식`var func = function()`으로 선언한 함수는 변수와 마찬가지로 선언만 호이스팅이 된다.
 
-    ````js
-
+    ```js
     console.log(typeof func); //undefined
 
     var func = function () {
-    // declaration is hoisted only
-    // console.log("declaration hoisted");
-    return "declaration hoisted : global";
+      // declaration is hoisted only
+      // console.log("declaration hoisted");
+      return "declaration hoisted : global";
     };
     console.log(typeof func); //function
-
-    ````
+    ```
 
 ## Related Topics
 
@@ -99,7 +97,6 @@ console.log("변수 선언과 할당 둘다", x); // 1 : 1이라는 값을 할�
 - [[변수] 식별자란 무엇인가요?]()
 - [[변수] 변수란 무엇인가요?]()
 - [[변수] let 키워드는 var 키워드와 어떤 점이 다른가요?]()
-
 
 ## References
 
