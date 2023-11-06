@@ -27,21 +27,23 @@ console.log(window.x); // 1
 
   ```
 
-- 하지만 자바스크립트는 특별히 시작점 없시 코드가 나타나면 즉시 해석되고 실행된다. 따라서 전역에 변수를 선언하기 쉬워지고, 전역으로 변수를 선언했을 때 `변수 이름 중복`이나 `의도치 않았던 재할당을 통해 코드를 예측하기 어렵게` 만들 거나, `메모리를 효율적으로 쓰지 않게`되는 문제들을 일으킬 수 있다.
+### 전역 변수 문제점
 
-  ```js
-  var global = "global";
-  function foo() {
-    var local = "local";
-    console.log(global); // undefined 호이스팅 : 자바스크립트는 함수레벨 스코프를 따름
-    console.log(local); // local
-    var global;
-  }
-  foo();
+하지만 자바스크립트는 특별히 시작점 없시 코드가 나타나면 즉시 해석되고 실행된다. 따라서 전역에 변수를 선언하기 쉬워지고, 전역으로 변수를 선언했을 때 `변수 이름 중복`이나 `의도치 않았던 재할당을 통해 코드를 예측하기 어렵게` 만들 거나, `메모리를 효율적으로 쓰지 않게`되는 문제들을 일으킬 수 있다.
 
-  console.log(global); //global : 전역 변수를 참조
-  // console.log(local); // Uncaught ReferenceError: local is not defined
-  ```
+```js
+var global = "global";
+function foo() {
+  var local = "local";
+  console.log(global); // undefined 호이스팅 : 자바스크립트는 함수레벨 스코프를 따름
+  console.log(local); // local
+  var global;
+}
+foo();
+
+console.log(global); //global : 전역 변수를 참조
+// console.log(local); // Uncaught ReferenceError: local is not defined
+```
 
 ### 함수 레벨 스코프
 
