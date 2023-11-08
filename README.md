@@ -74,7 +74,6 @@
 |[ 실행 컨텍스트 ] 실행 컨텍스트에 대해 말해보세요|  |  |  |  |
 |[[ 클로저 ] 클로저에 대해서 아나요?](https://github.com/Pyotato/tech_interview/blob/JS/closure/definition.md) | 🔥🔥🔥 |  |  |  |
 |[[ 클로저 ] 클로저를 사용하면 뭐가 좋죠?](https://github.com/Pyotato/tech_interview/blob/JS/closure/pros_cons.md)  | 🔥🔥 |  |  |  |
-|[ 클로저 ] 클로저에 대해서 아나요? | 🔥 |  |  |  |
 |[ 클래스 ] 자바스크립트에서 클래스가 생기기 전에는 어떤 방식으로 객체지향 패턴을 구현했나요? | |  |  |  |
 |[ 클래스 ] 그럼 생성자 함수와 클래스는 어떤 차이가 있나요? | |  |  |  |
 |[ 클래스 ] 클래스 정의 | |  |  |  |
