@@ -163,17 +163,14 @@ console.log(add10(2)); // 12
 - `makeAdder()`는 *function factory*다. 즉, 같은 함수 body를 갖지만, 각각의 렉시컬 환경을 따로 갖고 있다.
 
 - 실제로 작동하는 과정을 debugger로 찍어보면, 함수 `add5`와 `add10`가 각각 다른 렉시컬 환경을 갖고 있다는 걸 볼 수 있다.
-  ![Alt text](image-1.png)
 
-![Alt text](image-2.png)
+![스크린샷 2023-11-08 104006](https://github.com/Pyotato/tech_interview/assets/102423086/9d4bf935-91a6-4ac1-9c70-8e8065f48e5c)
+![스크린샷 2023-11-08 104047](https://github.com/Pyotato/tech_interview/assets/102423086/3fe4cea6-2fd3-481a-94b5-f2134b474a2c)
+![스크린샷 2023-11-08 104153](https://github.com/Pyotato/tech_interview/assets/102423086/cbf03ef9-733d-48cc-a4ab-8ba0536479f0)
+![스크린샷 2023-11-08 104222](https://github.com/Pyotato/tech_interview/assets/102423086/2c22fbe4-bf26-42fb-9080-4b1ec1481289)
+![스크린샷 2023-11-08 104317](https://github.com/Pyotato/tech_interview/assets/102423086/eb2751a5-18be-40ce-8463-0e90e2613eea)
+![스크린샷 2023-11-08 104348](https://github.com/Pyotato/tech_interview/assets/102423086/fc0ef5dd-593b-4142-b306-81c9363fc71c)
 
-![Alt text](image-3.png)
-
-![Alt text](image-4.png)
-
-![Alt text](image-5.png)
-
-![Alt text](image-6.png)
 
 ## WHY?
 
