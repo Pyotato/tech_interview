@@ -78,6 +78,70 @@ const myFunc = makeFunc();
   - 블록 스코프인 let/const 키워드로 선언한 변수는 if문의 {}에서만 접근 가능하다.
   - ECMA6부터는 블록레벨 스코프가 사용가능해졌다. 또한 ECMA6부터는 블록 스코핑 말고도 [모듈]()을 통해 새로운 종류의 스코프를 만들 수 있게 되었다.
 
+## 블록 스코프의 변수 클로저
+
+```js
+function outer() {
+  let getY;
+  {
+    const y = 6;
+    getY = () => y;
+  }
+  console.log(typeof y); // undefined
+  console.log(getY()); // 6
+}
+
+outer();
+```
+
+- 위의 함수 `outer()`는 변수 `getY`가 있고, 내부에는 {}(중괄호 블록)로 감싸진 클로저에 `getY`가 화살표 함수로 내부 스코프의 y값을 리턴한다.
+- 따라서 변수 `getY` 화살표함수를 통해 `y` 변수에 접근가능하다.
+- 하지만 직접적으로 `y`변수에 접근하는 것은 불가능하다 (undefined)
+
+## 모듈 스코프의 변수 클로저
+
+```js
+// myModule.js
+let x = 5;
+export const getX = () => x;
+export const setX = (val) => {
+  x = val;
+};
+```
+
+- 위의 모듈은 `getter와 setter함수`로 이루어져 있다.
+- 모듈 스코프 변수를 지닌 x는 다른 모듈에서 직접 접근은 불가능하지만 `모듈 내부의 함수에 의해` 읽고(get) 쓰기(set)가 가능하다.
+- 외부에서 set해준 변수에 의해 import해온 원래 값이 [바인딩]()될 수도 있다.
+- myModule.js
+
+```js
+// myModule.js
+export let x = 1;
+export const setX = (val) => {
+  x = val;
+};
+```
+
+- closureCreator.js
+
+```js
+import { x } from "./myModule.js";
+
+export const getX = () => x; // 모듈 스코프의 클로저로 외부 모듈에서 x를 받아 리턴해줌
+```
+
+```js
+import { getX } from "./closureCreator.js";
+import { setX } from "./myModule.js";
+
+console.log(getX()); // 1
+setX(2);
+console.log(getX()); // 2
+```
+
+- 위의 콘솔을 찍어보면 getX()는 closureCreator myModule의 모듈 스코프 변수인 x에 접근한다.
+- setX에서
+
 ## Function factory : 여러 독립된 렉시컬 환경
 
 ```js
@@ -115,11 +179,204 @@ console.log(add10(2)); // 12
 
 > 이러한 특성들을 [클로저 사용의 장단점]()을 만드는데, 이러한 특성들을 잘 활용하고 고려해서 개발을 효율적으로 할 수 있다.
 
+## CAUTION! 클로저 사용 유의 사항!
+
+### 1. 함수 스코프 체이닝
+
+- 모든 클로저에는 3가지 스코프가 있다
+  - Local scope : 자기 자신의 스코프
+  - Enclosing scope : 블록, 함수, 모듈 스코프
+  - Global scope
+- 흔한 실수는 외부함수 자체가 중첩된 함수라는 걸 간과하는 것
+- 외부함수의 스코프에 접근은 외부함수의 enclosing 스코프에도 접근하는 걸 포함하기 때문에 함수 스코프 체이닝이 발생한다.
+
+#### 예시
+
+```js
+// 전역 스코프
+const e = 10;
+function sum(a) {
+  return function (b) {
+    return function (c) {
+      //외부 함수 스코프
+      return function (d) {
+        // 지역 스코프
+        return a + b + c + d + e;
+      };
+    };
+  };
+}
+
+console.log(sum(1)(2)(3)(4)); // 20
+
+// 익명함수 없이
+function sumNonAnon(a) {
+  return function sumNonAnon2(b) {
+    return function sumNonAnon3(c) {
+      // 외부 함수 스코프
+      return function sumNonAnon4(d) {
+        // 지역 스코프
+        return a + b + c + d + e;
+      };
+    };
+  };
+}
+
+const sumNonAnon2 = sumNonAnon(1);
+const sumNonAnon3 = sumNonAnon2(2);
+const sumNonAnon4 = sumNonAnon3(3);
+const result = sumNonAnon4(4);
+console.log(result); // 20
+```
+
+- 위의 예시에서 볼 수 있듯이 여러개의 함수들이 중첩되어 있고, 각각은 외부 함수의 스코프에 접근 가능하다.
+- 이 점에서 클로저는 모든 외부 함수 스코프에 접근이 가능하다고 불 수 있다.
+
+### 2. 반복문에서의 클로저 사용
+
+- `let` 키워드의 등장 이전에는 반복문안에 클로저를 생성할 때 문제가 자주 발생했다.
+- 아래의 코드에서는 input창 활성화되는 거에 따라 메세지가 달리 보이는 코드를 구현하려고 한다.
+- 하지만 예상과는 다르게 `age`에 해당되는 메세지만 나온다.
+
+```js
+function showHelp(help) {
+  document.getElementById("help").textContent = help;
+}
+
+function setupHelp() {
+  var helpText = [
+    { id: "email", help: "Your email address" },
+    { id: "name", help: "Your full name" },
+    { id: "age", help: "Your age (you must be over 16)" },
+  ];
+
+  for (var i = 0; i < helpText.length; i++) {
+    // Culprit is the use of `var` on this line
+    var item = helpText[i];
+    document.getElementById(item.id).onfocus = function () {
+      showHelp(item.help);
+    };
+  }
+}
+
+setupHelp();
+```
+
+- 이유는 `onfocus` 함수에 할당된 함수는 모두 같은 같은 클로저를 공유하기 때문이다. setupHelp 함수의 렉시컬 환경을 참조하기 때문에 var로 선언한 item 변수는 호이스팅때문에 함수 스코프를 지니게 된다.
+- `item.help`은 onfocus 콜백들이 실행될 때 결정되는데, 이미 이 시점에는 loop가 다 돌고, item 변수는 helpText 리스트의 마지막 값을 가르키게 되어 `age.help`값만 출력되는 것이다.
+
+#### solutions
+
+1. function factory 활용
+
+   - 콜백들이 모두 하나의 렉시컬 환경을 공유하는 대신, `makeHelpCallback()`가 각각의 콜백들의 렉시컬 환경을 만들고, `help`가 helpText 배열에서 id에 맞는 text를 보여줘 예상대로 작동한다.
+
+   ```js
+   function showHelp(help) {
+     document.getElementById("help").textContent = help;
+   }
+   function makeHelpCallback(help) {
+     return function () {
+       showHelp(help);
+     };
+   }
+   function setupHelp() {
+     var helpText = [
+       { id: "email", help: "Your email address" },
+       { id: "name", help: "Your full name" },
+       { id: "age", help: "Your age (you must be over 16)" },
+     ];
+     for (var i = 0; i < helpText.length; i++) {
+       var item = helpText[i];
+       document.getElementById(item.id).onfocus = makeHelpCallback(item.help);
+     }
+   }
+   setupHelp();
+   ```
+
+2. 익명 클로저 활용
+
+```js
+function showHelp(help) {
+  document.getElementById("help").textContent = help;
+}
+
+function setupHelp() {
+  var helpText = [
+    { id: "email", help: "Your email address" },
+    { id: "name", help: "Your full name" },
+    { id: "age", help: "Your age (you must be over 16)" },
+  ];
+
+  for (var i = 0; i < helpText.length; i++) {
+    (function () {
+      var item = helpText[i];
+      document.getElementById(item.id).onfocus = function () {
+        showHelp(item.help);
+      };
+    })(); // 이벤트 리스너를 즉시함수로하여 현재 아이템의 값이 loop를 돌 때까지 유지되도록해줌
+  }
+}
+
+setupHelp();
+```
+
+3. `let`이나 `const` 키워드 활용
+
+```js
+function showHelp(help) {
+  document.getElementById("help").textContent = help;
+}
+
+function setupHelp() {
+  const helpText = [
+    { id: "email", help: "Your email address" },
+    { id: "name", help: "Your full name" },
+    { id: "age", help: "Your age (you must be over 16)" },
+  ];
+
+  for (let i = 0; i < helpText.length; i++) {
+    const item = helpText[i];
+    document.getElementById(item.id).onfocus = () => {
+      showHelp(item.help);
+    };
+  }
+}
+
+setupHelp();
+```
+
+4. `forEach()` 사용해서 배열 순회하고 각 `<input>`태그에 리스너를 붙이기
+
+```js
+function showHelp(help) {
+  document.getElementById("help").textContent = help;
+}
+
+function setupHelp() {
+  var helpText = [
+    { id: "email", help: "Your email address" },
+    { id: "name", help: "Your full name" },
+    { id: "age", help: "Your age (you must be over 16)" },
+  ];
+
+  helpText.forEach(function (text) {
+    document.getElementById(text.id).onfocus = function () {
+      showHelp(text.help);
+    };
+  });
+}
+
+setupHelp();
+```
+
 ## Related Topics
 
 - [스코프의 정의](https://github.com/Pyotato/tech_interview/blob/JS/scope/definition.md)
 - [[스코프의 종류](https://github.com/Pyotato/tech_interview/blob/JS/scope/definition.md)(ft. [렉시컬 스코프](https://github.com/Pyotato/tech_interview/blob/JS/scope/types.md#%EB%A0%89%EC%8B%9C%EC%BB%AC-%EC%8A%A4%EC%BD%94%ED%94%84lexical-scope-cf-dynamic-scope))]
 - [IIFE]()
+- [모듈]()
+- [바인딩]()
 
 ## References
 
