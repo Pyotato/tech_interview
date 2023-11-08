@@ -8,6 +8,7 @@
 | content | description                 |
 | :-------: | :---------------------------: |
 | add     | 질문 링크 추가              |
+| elaborate     | 질문 답변 내용 추가 및 설명 추가             |
 | link    | 질문 이외의 링크 추가 (reference 링크 etc)|
 | answer  | 질문에 대답 추가            |
 | typo    | 오타 및 링크 오류 수정      |
