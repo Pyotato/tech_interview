@@ -6,6 +6,8 @@
 
 > - TDZ 안에 있는 동안, 변수는 초기값이 할당되지 않은 상태이며, 접근 시 `reference Error(참조 에러)`가 발생한다. 변수 선언 시 초기값이 없는 상태에서 호출된다면 `undefined`값으로 초기화 된다.
 
+![TDZ_limit](/images/TDZ_limit.png)
+
 ## vs var
 
 - `const`, `let`, `class`와는 달리 `var` 키워드로 선언된 변수는 선언 전에 접근시 `undefined`값을 리턴한다.
@@ -89,12 +91,57 @@ function go(n) {
 go({ a: [1, 2, 3] });
 ```
 
+- Default 함수 파라미터
+- 전역과 함수 스코프 중간의 스코프를 지닌 default 파라미터들 또한 TDZ에 놓이게 된다.
+
+```js
+//const a = 2;
+//function square(a = a) { 오른쪽의 a는 위의 a가 아닌 default parameter의 a를 참조. 선언과 동시에 접근을 하기 떄문에 참조 에러!
+const init = 2;
+function square(a = init) {
+  return a * a;
+}
+// Works!
+square(); // => 4
+```
+
+## & [Class]()
+
+- `let`와 `const` 키워드로 선언한 변수와 같이 `Class`또한 선언 전에 접근할 수 없다.
+
+  ```js
+  // const myNissan = new Car("red"); // 초기화 이전에 접근 불가능
+  class Car {
+    constructor(color) {
+      this.color = color;
+    }
+  }
+  const myNissan = new Car("red"); // 접근 가능
+  ```
+
+- 부모 클래스를 extend 할 경우, `constructor()` 안의 this를 사용하기 위해서는 `super()` 키워드가 먼저 호출되어야한다.
+- `super()`키워드로 부모 생성자를 호출해서 인스턴스를 초기화해주기 위해서다.
+
+  ```js
+  class MuscleCar extends Car {
+    constructor(color, power) {
+      super(color);
+      this.power = power;
+      // super(color); // this 이전에 호출해야함!
+    }
+  }
+
+  const myCar = new MuscleCar("blue", "300HP");
+  ```
+
 ## Related Topics
 
 - [[변수] 호이스팅이 뭔가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/hoisting.md)
 - [[스코프] 렉시컬 스코프를 아나요? 안다면 렉시컬 스코프는 무엇을 의미하나요?](https://github.com/Pyotato/tech_interview/blob/JS/scope/types.md#%EB%A0%89%EC%8B%9C%EC%BB%AC-%EC%8A%A4%EC%BD%94%ED%94%84lexical-scope-cf-dynamic-scope)
+- [Class]()
 
 ## References
 
 - [scope wikipedia](<https://en.wikipedia.org/wiki/Scope_(computer_science)>)
 - [Temporal dead zone (TDZ) mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_tdz)
+- [dmitripavlutin: javascript-variables-and-temporal-dead-zone](https://dmitripavlutin.com/javascript-variables-and-temporal-dead-zone/)
