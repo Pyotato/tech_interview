@@ -96,4 +96,5 @@ go({ a: [1, 2, 3] });
 
 ## References
 
-- [scope wikipedia](<https://en.wikipedia.org/wiki/Scope_(computer_science)>) -[Temporal dead zone (TDZ) mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_tdz)
+- [scope wikipedia](<https://en.wikipedia.org/wiki/Scope_(computer_science)>)
+- [Temporal dead zone (TDZ) mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_tdz)
