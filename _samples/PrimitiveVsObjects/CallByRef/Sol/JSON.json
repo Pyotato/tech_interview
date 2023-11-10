@@ -1,0 +1,8 @@
+{
+  "info": {
+    "name": "Bob",
+    "age": "32",
+    "email": ["spongeBob@squarePants.com"]
+  },
+  "info_type": "introduction"
+}
