@@ -108,7 +108,7 @@
 |[[변수] TDZ](https://github.com/Pyotato/tech_interview/blob/JS/variable/TDZ.md)| 🔥🔥🔥 |  |  |
 |[변수] const 키워드는 어떤 특징이 있나요? | 🔥🔥 |  |  |
 |[변수] 식별자 네이밍 규칙은 어떤 것들이 있나요?| |  |  |
-|[변수] 리터럴이 뭔가요? |  |  |
+|[[변수] 리터럴이 뭔가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#Literals) |  |  |
 |[데이터 타입] 정적 타이핑이 뭔가요?| |  |  |  |
 |[데이터 타입] 동적 타이핑이 뭔가요?| |  |  |  |
 |[타입변환과 단축 평가] 명시적 타입 변환이 뭔가요?| |  |  |  |
