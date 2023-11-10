@@ -26,7 +26,12 @@ var sum = 10 + 20;
 
 ## Literals
 
->
+### WHAT?
+
+> 리터럴은 사람이 이해할 수 있는 문자/약속된 기호를 사용해 값을 생성하는 `표기법(notation)`이다.
+> 자바스크립트 엔진은 코드기 실행되는 시점인 `런타임`에 리터럴을 평가해 값을 생성한다.
+
+![Alt text](image.png)
 
 ## Naming rules
 
@@ -37,6 +42,7 @@ var sum = 10 + 20;
 - [[변수] var 키워드는 뭔가요?]()
 - [[변수] 식별자란 무엇인가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#vs-identifier%EC%8B%9D%EB%B3%84%EC%9E%90)
 - [[변수] 변수란 무엇인가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#what)
+- [[변수] 리터럴이 뭔가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#Literals)
 - [[변수] let 키워드는 var 키워드와 어떤 점이 다른가요?]()
 
 ## References
