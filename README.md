@@ -104,7 +104,7 @@
 |[[변수] 식별자란 무엇인가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#vs-identifier%EC%8B%9D%EB%B3%84%EC%9E%90)|  |  |  |
 |[변수] var 키워드는 뭔가요?|  |  |  |
 |[[변수] 호이스팅이 뭔가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/hoisting.md)|🔥🔥🔥🔥  |  |  |
-|[변수] let 키워드는 var 키워드와 어떤 점이 다른가요?|🔥🔥🔥 |  |  |
+|[[변수] let 키워드는 var 키워드와 어떤 점이 다른가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#keywords)|🔥🔥🔥 |  |  |
 |[[변수] TDZ](https://github.com/Pyotato/tech_interview/blob/JS/variable/TDZ.md)| 🔥🔥🔥 |  |  |
 |[변수] const 키워드는 어떤 특징이 있나요? | 🔥🔥 |  |  |
 |[변수] 식별자 네이밍 규칙은 어떤 것들이 있나요?| |  |  |
