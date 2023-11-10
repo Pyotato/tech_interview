@@ -91,10 +91,10 @@ console.log("변수 선언과 할당 둘다", x); // 1 : 1이라는 값을 할�
 
 ## Related Topics
 
-- [[변수] TDZ (Temporal Dead Zone)]()
+- [[변수] TDZ (Temporal Dead Zone)](https://github.com/Pyotato/tech_interview/blob/JS/variable/TDZ.md)
 - [[변수] const 키워드는 어떤 특징이 있나요?]()
 - [[변수] var 키워드는 뭔가요?]()
-- [[변수] 식별자란 무엇인가요?]()
+- [[변수] 식별자란 무엇인가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#vs-identifier%EC%8B%9D%EB%B3%84%EC%9E%90)
 - [[변수] 변수란 무엇인가요?]()
 - [[변수] let 키워드는 var 키워드와 어떤 점이 다른가요?]()
 
