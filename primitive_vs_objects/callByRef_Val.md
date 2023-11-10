@@ -147,8 +147,6 @@ console.log("copyUser", copyUser);
 - [구조 분해 할당]()
 - [불변성]()
 
-## Play
-
 ## References
 
 - [siot0](https://siot0.tistory.com/48)
