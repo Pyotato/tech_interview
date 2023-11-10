@@ -100,7 +100,7 @@
 |[프로그래밍] 컴파일러는 뭐고 인터프리터는 뭔가요?|  🔥 |  |  |
 |자바스크립트의 특징은 뭐가 있나요?|  |  |  |
 |[자바스크립트 부동소수점 계산 문제](https://github.com/Pyotato/tech_interview/blob/JS/floatingPoint.md)|  |  | 🌟 |
-|[변수] 변수란 무엇인가요?|  |  |  |
+|[[변수] 변수란 무엇인가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#what)|  |  |  |
 |[[변수] 식별자란 무엇인가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#vs-identifier%EC%8B%9D%EB%B3%84%EC%9E%90)|  |  |  |
 |[변수] var 키워드는 뭔가요?|  |  |  |
 |[[변수] 호이스팅이 뭔가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/hoisting.md)|🔥🔥🔥🔥  |  |  |
