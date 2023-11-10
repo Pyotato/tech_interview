@@ -31,7 +31,21 @@ var sum = 10 + 20;
 > 리터럴은 사람이 이해할 수 있는 문자/약속된 기호를 사용해 값을 생성하는 `표기법(notation)`이다.
 > 자바스크립트 엔진은 코드기 실행되는 시점인 `런타임`에 리터럴을 평가해 값을 생성한다.
 
-![Alt text](image.png)
+| 리터럴      |                       예시                        |            비고            |
+| ----------- | :-----------------------------------------------: | :------------------------: |
+| 정수        |                       `100`                       |                            |
+| 부동소수점  |                      `10.5`                       |                            |
+| 2진수       |                   `0b010000001`                   |         0b로 시작          |
+| 8진수       |                      `0o101`                      | ES6에서 도입 `0o`으로 시작 |
+| 16진수      |                      `0x41`                       | ES6에서 도입 `0x`으로 시작 |
+| 문자열      |                  `'Hi' "there"`                   |                            |
+| 불리언      |                   `true false`                    |                            |
+| null        |                      `null`                       |                            |
+| undefined   |                     undefined                     |                            |
+| 객체        | `{name : 'pyotato',email:'pyotato.dev@gmail.com}` |                            |
+| 배열        |                     `[1,2,3]`                     |                            |
+| 함수        |                  `function (){}`                  |                            |
+| 정규 표현식 |                    `/[A-z]+/g`                    |                            |
 
 ## Naming rules
 
@@ -50,3 +64,4 @@ var sum = 10 + 20;
 - [mdn Identifier](https://developer.mozilla.org/en-US/docs/Glossary/Identifier)
 - [wiki/Literal](<https://en.wikipedia.org/wiki/Literal_(computer_programming)>)
 - [ssi02014/Front-Interview](https://github.com/ssi02014/Front-Interview/blob/master/documents/JavaScript/value-literal-statement.md)
+- [모던 자바스크립트 Deep Dive](https://www.yes24.com/Product/Goods/92742567)
