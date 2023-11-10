@@ -2,6 +2,14 @@
 
 ## WHAT?
 
+> 하나의 값을 저장하기 위해 확보한 메모리 공간 자체/메모리 공간을 식별하기 위해 붙인 이름
+> 따라서 변수에 할당되는 것은 `값`이다.
+
+```js
+// sum이라는 변수에 10+20(식)이 평가되어 생성된 숫자 값 30이 할당됨
+var sum = 10 + 20;
+```
+
 ## vs Identifier(식별자)
 
 > 식별자란 코드 내에 함수,변수나 속성들을 구분지어주는 문자열이다.
@@ -18,6 +26,8 @@
 
 ## Literals
 
+>
+
 ## Naming rules
 
 ## Related Topics
@@ -33,3 +43,4 @@
 
 - [mdn Identifier](https://developer.mozilla.org/en-US/docs/Glossary/Identifier)
 - [wiki/Literal](<https://en.wikipedia.org/wiki/Literal_(computer_programming)>)
+- [ssi02014/Front-Interview](https://github.com/ssi02014/Front-Interview/blob/master/documents/JavaScript/value-literal-statement.md)
