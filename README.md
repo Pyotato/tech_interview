@@ -106,7 +106,7 @@
 |[[변수] 호이스팅이 뭔가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/hoisting.md)|🔥🔥🔥🔥  |  |  |
 |[[변수] let 키워드는 var 키워드와 어떤 점이 다른가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#keywords)|🔥🔥🔥 |  |  |
 |[[변수] TDZ](https://github.com/Pyotato/tech_interview/blob/JS/variable/TDZ.md)| 🔥🔥🔥 |  |  |
-|[변수] const 키워드는 어떤 특징이 있나요? | 🔥🔥 |  |  |
+|[[변수] const 키워드는 어떤 특징이 있나요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/const.md) | 🔥🔥 |  |  |
 |[변수] 식별자 네이밍 규칙은 어떤 것들이 있나요?| |  |  |
 |[[변수] 리터럴이 뭔가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#Literals) |  |  |
 |[데이터 타입] 정적 타이핑이 뭔가요?| |  |  |  |
