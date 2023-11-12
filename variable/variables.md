@@ -32,7 +32,7 @@ var sum = 10 + 20;
 | **재할당**                                           |                                                            🙆‍♀️                                                            |                                                               🙆‍♀️                                                               |                 🙅                  |
 | **글로벌 객체 바인딩 (strict mode가 아니라는 가정)** |                                                            🙆‍♀️                                                            |                                                               🙅                                                               |                 🙅                  |
 | **Redeclaration (재선언)**                           |                                                            🙆‍♀️                                                            |                                                               🙅                                                               |                 🙅                  |
-
+|**statement or declaration**|declaration|statement|statement|
 ## Literals
 
 ### WHAT?
