@@ -61,8 +61,8 @@ var sum = 10 + 20;
 ## Related Topics
 
 - [[변수] TDZ (Temporal Dead Zone)](https://github.com/Pyotato/tech_interview/blob/JS/variable/TDZ.md)
-- [[변수] const 키워드는 어떤 특징이 있나요?]()
-- [[변수] var 키워드는 뭔가요?]()
+- [[변수] const 키워드는 어떤 특징이 있나요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/const.md)
+- [[변수] var 키워드는 뭔가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/var.md)
 - [[변수] 식별자란 무엇인가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#vs-identifier%EC%8B%9D%EB%B3%84%EC%9E%90)
 - [[변수] 변수란 무엇인가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#what)
 - [[변수] 리터럴이 뭔가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#Literals)
