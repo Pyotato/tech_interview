@@ -55,3 +55,9 @@
       function a() {} // SyntaxError: Identifier 'a' has already been declared
       console.log(a);
       ```
+## Related Topics
+
+- [[변수] let 키워드는 var 키워드와 어떤 점이 다른가요?](https://github.com/Pyotato/tech_interview/blob/JS/variable/variables.md#keywords)
+
+## References
+- [hoisting wikipedia](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
