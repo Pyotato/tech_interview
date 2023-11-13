@@ -1,4 +1,4 @@
-# Variables
+# Const
 
 ## WHAT?
 
