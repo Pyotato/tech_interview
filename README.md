@@ -240,7 +240,7 @@ E2E 테스트란 무엇인가요?
 |[자료구조] 스택||||
 |[자료구조] 링크드 리스트||||
 |[자료구조] 해쉬 테이블||1||
-|[자료구조] 트리||||
+|[[자료구조] 트리: 이진탐색트리](https://github.com/Pyotato/tech_interview/blob/CS/DataStructure/Tree/BinarySearchTree/index.md)||||
 |[자료구조] 힙||||
 |[자료구조] 그래프||||
 |[프로세스와 스레드]()||||
