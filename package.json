@@ -1,0 +1,12 @@
+{
+  "name": "tech_interview",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Pyotato/tech_interview.git",
+  "author": "Pyotato <pyolovely01@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "type": "module"
+}
